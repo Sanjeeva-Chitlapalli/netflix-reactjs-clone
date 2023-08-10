@@ -1,0 +1,22 @@
+/* videoplayer.css */
+.video-player {
+  position: fixed;
+  top: 4rem; /* Adjust this value to match the height of your navbar */
+  left: 0;
+  width: 100%;
+  height: calc(
+    100% - 4rem
+  ); /* Adjust this value to leave space for the navbar */
+  background-color: #000;
+  z-index: 9999;
+}
+
+.video-player__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  z-index: 1;
+}

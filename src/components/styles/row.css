@@ -1,0 +1,59 @@
+.row {
+  margin-left: 20px;
+  color: #e6e6e6;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row_poster {
+  cursor: pointer;
+  object-fit: contain;
+  max-height: 200px;
+  width: 100%;
+  transition: transform 450ms;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}
+
+/* Skeleton Loader */
+.row_poster.loading {
+  background-color: #ddd;
+  animation: loadingAnimation 1s infinite alternate;
+}
+
+@keyframes loadingAnimation {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card Box Skeleton */
+.card_box {
+  background-color: #ddd;
+  width: 180px;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.card_box:last-child {
+  margin-right: 0;
+}

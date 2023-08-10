@@ -1,0 +1,67 @@
+/* Add this CSS to your LoginSignup.css file */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #17212a;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 300px;
+  padding: 20px;
+
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #e74c3c;
+}
+
+.box input {
+  width: 93%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.box input::placeholder {
+  color: #95a5a6;
+}
+
+.box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background-color: #c0392b;
+}
+
+.box p {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.box button.signup-button {
+  background-color: #27ae60;
+}
+
+.box button.signup-button:hover {
+  background-color: #219955;
+}
